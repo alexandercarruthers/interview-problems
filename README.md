@@ -1,5 +1,6 @@
 # interview-problems
-1.Fizzbuzz<br/>
+1.Fizzbuzz
+"Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”."<br/>
 2.Reverse a string<br/>
 3.Reverse a sentence ("bob likes dogs" -> "dogs likes bob")<br/>
 4.Find the minimum value in a list<br/>
