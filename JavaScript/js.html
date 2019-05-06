@@ -38,9 +38,29 @@
         let reversed_sentence = reversed.join(" ");
         console.log(reversed_sentence);
     }
+    function minimum_value(list) { //q4
+        let currentmin = list[0];
+        for(let i = 0; i < list.length; i++){
+            if(list[i] < currentmin){
+                currentmin = list[i]
+            }
+        }
+        console.log(currentmin);
+    }
+    function maximum_value(list) { //q4
+        let currentmax = list[0];
+        for(let i = 0; i < list.length; i++){
+            if(list[i] > currentmax){
+                currentmax = list[i]
+            }
+        }
+        console.log(currentmax);
+    }
 
     //fizzbuzz();
     //reverse_String("pilot");
-    reverse_Sentence("bob likes dogs");
+    //reverse_Sentence("bob likes dogs");
+    //minimum_value([4,65,7,26,53,45,235,26,12,11,99,19,23,5]);
+    //maximum_value([4,65,7,26,53,45,15,26,12,11,99,19,23,5]);
 </script>
 </html>
