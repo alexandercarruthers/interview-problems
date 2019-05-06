@@ -4,8 +4,7 @@
 </body>
 <script>
 
-    function fizzbuzz() { //1
-
+    function fizzbuzz() { //q1
         for(let i = 1; i < 101; i++){
             if(i % 3 == 0 && i % 5 == 0){
                 console.log("fizzbuzz");
@@ -17,10 +16,31 @@
             else{
                 console.log(i);
             }
-
         }
     }
+    function reverse_String(str) { //q2
+        let strlen = str.length;
+        let lastchar = strlen -1;
+        let newstr = "";
+        for(let i = 0; i < strlen; i++){
+            newstr = newstr + str.charAt(lastchar - i)
+        }
+        console.log(newstr);
+    }
+    function reverse_Sentence(sentence) { //q3
+        let words = sentence.split(" ");
+        let words_len = words.length;
+        let last_index = words_len - 1;
+        let reversed = [];
+        for(let i = 0; i < words_len; i++){
+            reversed.push(words[last_index - i]);
+        }
+        let reversed_sentence = reversed.join(" ");
+        console.log(reversed_sentence);
+    }
 
-    fizzbuzz();
+    //fizzbuzz();
+    //reverse_String("pilot");
+    reverse_Sentence("bob likes dogs");
 </script>
 </html>
