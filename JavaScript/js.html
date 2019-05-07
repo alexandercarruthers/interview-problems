@@ -59,10 +59,24 @@
     function calc_remainder(numerator,denominator){ //q6
         console.log(numerator % denominator);
     }
-    function distinct_values(list){
+    function distinct_values(list){ //q7
         for(let i = 0; i < list.length; i++){
-            
+
         }
+    }
+    const stat1 = [1, 2, 3, 4, 4, 5, 5];
+    const stat2 = [1, 1, 2, 2, 3, 3, 4, 4];
+    /*
+    mean value = total amount / number of figures
+    stats1 3.43
+    stats2 2.5
+    */
+    function mean(intList){ //
+        let totalAmount = 0;
+        for(let i = 0; i < intList.length; i++){
+            totalAmount = totalAmount + intList[i];
+        }
+        console.log(totalAmount / intList.length);
     }
 
     //fizzbuzz();
@@ -71,7 +85,11 @@
     //minimum_value([4,65,7,26,53,45,235,26,12,11,99,19,23,5]);
     //maximum_value([4,65,7,26,53,45,15,26,12,11,99,19,23,5]);
     //calc_remainder(10,2)
-    distinct_values([1,3,5,3,7,3,1,1,5])
+    //distinct_values([1,3,5,3,7,3,1,1,5])
+    mean(stat1);
+    mean(stat2);
+
+
 
 </script>
 </html>
