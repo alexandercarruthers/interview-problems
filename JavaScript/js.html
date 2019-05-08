@@ -78,6 +78,64 @@
         }
         console.log(totalAmount / intList.length);
     }
+    /*
+    medium value  = middle value of ordered list
+    stats1 4
+    stats2 2.5
+    */
+    function medium(intList){
+        let middleValue = (intList.length - 1) / 2
+        let middleValueFloor = Math.floor(middleValue);
+        if (middleValueFloor == middleValue){
+            console.log(intList[middleValue]);
+        }else {
+            let middleValueCeil = Math.ceil(middleValue);
+            console.log((intList[middleValueFloor] + intList[middleValueCeil] )/ 2)
+        }
+    }
+    /*
+    medium value  = middle value of ordered list
+    stats1 4
+    stats2 2.5
+    */
+    function mode(intList){
+
+    }
+
+
+    /*
+    brute force sol
+    https://www.youtube.com/watch?v=GBuHSRDGZBY
+    * */
+    const x = [-1,3,8,2,9,5];
+    const y = [4,1,2,10,5,20];
+    function ytProblem(x,y, target){
+        let currentbestx;
+        let currentbesty;
+        let currentbest = 1000;
+        let z,diff;
+        for(let i = 0; i < x.length; i++){
+            for(let j = 0; j < x.length; j++){
+                z = x[i] + y[j];
+                diff = Math.abs(target -  z);
+                if(diff < currentbest)
+                {
+                    currentbest = diff;
+                    currentbestx = i;
+                    currentbesty = j;
+                    //console.log("currentbest " + currentbest);
+                }
+
+                //console.log("x " + i + " " + j + " y = " + z + " diff " + diff);
+
+            }
+        }
+        console.log(x[currentbestx],y[currentbesty])
+    }
+
+
+
+
 
     //fizzbuzz();
     //reverse_String("pilot");
@@ -86,8 +144,11 @@
     //maximum_value([4,65,7,26,53,45,15,26,12,11,99,19,23,5]);
     //calc_remainder(10,2)
     //distinct_values([1,3,5,3,7,3,1,1,5])
-    mean(stat1);
-    mean(stat2);
+    //mean(stat1);
+    //mean(stat2);
+    //medium(stat1);
+    //medium(stat2);
+    ytProblem(x,y,24);
 
 
 
